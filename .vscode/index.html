@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+        rel="stylesheet" 
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+        crossorigin="anonymous">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <FontAwesomeIcon icon="fa-brands fa-cc-visa" />
+    <FontAwesomeIcon icon="fa-brands fa-cc-mastercard" />
+    <FontAwesomeIcon icon="fa-brands fa-cc-diners-club" />
+    <FontAwesomeIcon icon="fa-brands fa-cc-paypal" />
+</head>
+
+<body class="p-5">
+
+<div class=" card border border-secondary-subtle rounded">
+
+        <!-- titulo del formulario -->
+
+            <div class="card-header">
+                <h4 class="fw-bold"> Payment form example</h4>
+            </div>
+        
+    <form action="#" method="get" target="_parent">
+
+        <!-- primera caja -->
+
+        <div class="card-body">
+            <div>
+            
+                <div class="alert alert-danger fw-medium form-select-sm" role="alert">
+                    Some fields are missing
+                </div>
+            
+                <div class="d-flex">
+            
+                    <fieldset class="col-5">
+                        <label class="py-2 fw-medium">Card #</label>
+                        <input class="col-11 fw-medium p-1" type="text" maxlength="16" name="card" placeholder="xxxxxxxxxxxxxxxx" required autofocus />
+                    </fieldset>
+            
+                    <fieldset class="col-3">
+                        <label class="py-2 fw-medium">CVC #</label>
+                        <input class="col-11 fw-medium p-1" type="Text" maxlength="4" name="CVC" placeholder="0000" required autofocus/>
+                    </fieldset>
+            
+                    <fieldset class="col-4">
+                        <label class="py-2 fw-medium">Amount</label> <br> 
+                        <label class="px-2 fw-bold" for="firstname">$</label>
+                        <input class="col-11 fw-medium p-1" type="Text" maxlength="9" name="Amount" placeholder="Amount" required autofocus/>
+                    </fieldset>
+            
+                </div>
+            
+            </div>
+            
+            <!-- segunda caja -->
+            
+            <div class="d-flex col-12">
+            
+                <!-- primer subconjunto -->
+            
+                <div class="w-50">
+            
+                    <fieldset class="col-12">
+                        <label class="py-2 fw-medium">First name</label>
+                        <input class="col-11" type="Text" maxlength="20" name="firstname" required autofocus/>
+                    </fieldset>
+            
+                    <fieldset class="col-12">
+                        <label class="d-block py-2 fw-medium">City</label> 
+                        <input class="col-11" type="Text" maxlength="16" name="City" required autofocus/>
+                    </fieldset>
+            
+                    <fieldset class="col-5">
+
+                        <legend class="fs-6 py-2 fw-medium"> We aceppt: </legend>
+
+                        <div class="bg-secondary rounded p-2">
+                            
+                            <input type="radio" name="bank" value="x" required autofocus/>
+                            <label class="px-1" for="gender">
+                                <i class="fa-brands fa-cc-mastercard"></i>
+                            </label>
+                            
+                            <input type="radio" name="bank" value="x" required autofocus />
+				            <label class="px-1" for="gender">
+                                <i class="fa-brands fa-cc-visa"></i>
+                            </label>
+
+                            <input type="radio" name="bank" value="x" required autofocus/>
+                            <label class="px-1" for="gender">
+                                <i class="fa-brands fa-cc-diners-club"></i>
+                            </label>
+
+                            <input type="radio" name="bank" value="x" required autofocus/>
+                            <label class="px-1" for="gender">
+                                <i class="fa-brands fa-cc-paypal fa-lumos"></i>
+                            </label>
+                        </div>
+
+                    </fieldset>
+            
+                </div>
+            
+                <!-- segundo subconjunto -->
+            
+                <div class="w-50">
+            
+                    <fieldset class="col-12">
+                        <label class="py-2 fw-medium">Last Name</label>
+                        <input class="col-12" type="Text" maxlength="20" name="lastname" required autofocus/>
+                    </fieldset>
+            
+                    <div class="d-flex">
+            
+                        <fieldset class="col-5 ">
+                            
+                                <label class="py-2 fw-medium" for="inputSelect01">State</label> 
+                                <select class="form-select-sm form-select border border-secondary" id="inputSelect01">
+                                    <option selected >Pick a state</option>
+                                    <option value="1">New York</option>
+                                    <option value="2">Alaska</option>
+                                    <option value="3">Louisiana</optio>
+                                </select>
+
+                        </fieldset>
+            
+                        <fieldset class="col-7 px-2">
+                            <label class="py-2 fw-medium">Postal Code</label>
+                            <input class="col-12" type="Text" maxlength="10" name="Postalcode" required autofocus />
+                        </fieldset>
+            
+                    </div>
+            
+                    <fieldset>
+                        <div class="mb-4">
+                            <label for="message-text" class=" fw-medium col-form-label">Message</label>
+                            <textarea class="form-control border border-secondary" id="message-text">
+                            </textarea>
+                            <legend class="form-select-sm text-secondary">Add any notes here.</legend>
+                        </div>
+                    </fieldset>
+            
+                </div>
+            
+            </div>
+
+        </div>
+
+        <div class="card-footer d-flex justify-content-end">
+            
+            <div class="px-1">
+                <button type="button" class="btn btn-secondary">Cancel</button>
+            </div>
+    
+            <div class="px-1">
+                <button type="submit" class="btn btn-primary">Send</button>
+            </div>
+    
+        </div>
+
+    </form>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
